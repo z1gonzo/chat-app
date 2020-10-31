@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Button, Form, Modal } from 'react-bootstrap'
+import { Modal, Form, Button } from 'react-bootstrap'
 import { useContacts } from '../contexts/ContactsProvider'
-import { useConversations } from '../contexts/ConversationProvider'
-
+import { useConversations } from '../contexts/ConversationsProvider'
 
 export default function NewConversationModal({ closeModal }) {
   const [selectedContactIds, setSelectedContactIds] = useState([])
@@ -39,9 +38,8 @@ export default function NewConversationModal({ closeModal }) {
                 type="checkbox"
                 value={selectedContactIds.includes(contact.id)}
                 label={contact.name}
-                onChange={() => {
-                  handleCheckboxChange(contact.id)
-                }} />
+                onChange={() => handleCheckboxChange(contact.id)}
+              />
             </Form.Group>
           ))}
           <Button type="submit">Create</Button>

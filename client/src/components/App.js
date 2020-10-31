@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContactsProvider } from '../contexts/ContactsProvider';
-import { ConversationsProvider } from '../contexts/ConversationProvider';
+import { ConversationsProvider } from '../contexts/ConversationsProvider';
 import { SocketProvider } from '../contexts/SocketProvider';
 import useLocalStorege from '../hooks/useLocalStorege';
 import Dashboard from './Dashboard';

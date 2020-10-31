@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import { Button, Form, InputGroup } from 'react-bootstrap'
-import { useConversations } from '../contexts/ConversationProvider'
+import { useConversations } from '../contexts/ConversationsProvider'
 
 
 
